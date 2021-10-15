@@ -1,15 +1,15 @@
 def main():
     num = int(input("Enter a number: "))
     #escribe tu código abajo de esta línea
-    numstr= str(num) #Transformar el numero a string
-    if len(numstr) > 6: #Checa si el numero tiene almenos 6 digitos 
+    numstr= str(num) 
+    if len(numstr) > 6: 
         print('Too long')
     else:
-        if num >0: #Imprime el numero inverso positivo 
+        if num >0: 
             reverso = numstr[len(numstr)::-1]
             print(reverso)
-        else: #Imprime el numero inverso negativo 
-            neg= numstr[0] #Imprime el signo "-"
+        else: 
+            neg= numstr[0]
             reverso =numstr[len(numstr):0:-1]
             revneg= neg + reverso
             print(revneg)
